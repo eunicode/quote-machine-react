@@ -1,0 +1,16 @@
+/* * {
+  margin: 0; // Override default CSS properties, such as margins added to the
+  top and bottom of h1 elements
+} */
+
+.App {
+  text-align: center;
+  background-color: gray;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0; /* Solution to white space at top of page */
+  /* display: inline; // Alternative solution to remove white space at top of
+    page */
+}

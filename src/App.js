@@ -12,7 +12,7 @@ class App extends Component {
         
         <div className="Quote-box">
          <div className="Quote-display">
-         Click button to generate a random Game of Thrones quote.
+         "When you play the game of thrones, you win or you die." ― Cersei Lannister
         </div>
         </div>
 
