@@ -9,8 +9,10 @@ Basic single column layout for all browsers:
 
 .App {
   background-color: gray;
-  height: 100vh;
-  max-width: 50rem; /* container for fallback layout in wide viewports */
+  min-height: 100vh; /* Even when viewport is shorter than all the elements in
+  .App combined, .App extends to fit all of them */
+  max-width: 50rem; /* container for fallback layout in wide viewports.
+  max-width prevents horizontal scrollbars when width is skinnier than 50rem */
   margin: 0 auto; /* center */
   text-align: center;
 }
