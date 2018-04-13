@@ -1,33 +1,49 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>
-          Game of Thrones Quote Machine
-        </h1>
-        
-        <div className="Quote-box">
-         <div className="Quote-display">
-         "When you play the game of thrones, you win or you die." ― Cersei Lannister
-        </div>
-        </div>
+      <div className="App"> {/* Ancestor component, 100vh */}
+        <header className="App-header">
+        <h1>Game of Thrones Quote Machine</h1>
+        </header>
 
-        <div className="Action-box">
-        <button onClick="newQuote">
-          Change quote
-          </button>
-          <button onClick="tweetQuote">
-            Tweet quote
-            </button>           
-        </div>
+        <QuoteBox />
 
-        </div>
+        <ButtonBox />
+
+        <Footer />
+      </div>
     );
   }
+}
+
+const QuoteBox = props => {
+  return (
+    <main className="Quote-box">
+      "When you play the game of thrones, you win or you die." ― Cersei
+      Lannister
+    </main>
+  );
+}
+
+const ButtonBox = props => {
+  return (
+    <div className="Button-box">
+    <button onClick="changeQuote">Change quote</button>
+    <button onClick="tweetQuote">Tweet quote</button>
+  </div>
+  );
+}
+
+const Footer = props => {
+  return (
+    <footer>
+    Coded by <a href='https://github.com/eunipa/'>eunicode </a>
+    </footer>
+  );
 }
 
 export default App;

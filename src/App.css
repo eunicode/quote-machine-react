@@ -1,16 +1,54 @@
+/*----------------------------------------------------------------------
+Basic single column layout for all browsers:
+------------------------------------------------------------------------ */
+
 /* * {
   margin: 0; // Override default CSS properties, such as margins added to the
   top and bottom of h1 elements
 } */
 
 .App {
-  text-align: center;
   background-color: gray;
   height: 100vh;
+  max-width: 50rem; /* container for fallback layout in wide viewports */
+  margin: 0 auto; /* center */
+  text-align: center;
 }
 
-h1 {
-  margin: 0; /* Solution to white space at top of page */
-  /* display: inline; // Alternative solution to remove white space at top of
-    page */
+/* h1 {
+  margin: 0;  // Solution to white space at top of page 
+  display: inline; // Alternative solution to remove white space at top of
+    page
+} */
+
+.App-header {
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.Quote-box {
+  padding: 0 1.5rem;
+}
+
+button {
+  display: block;
+  margin: 1.5rem auto;
+  min-width: 6rem;
+}
+
+footer {
+  padding: 1.5rem 0;
+}
+
+@supports (display: flex) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Button-box {
+    flex-grow: 1; /* There are other flex items in container, but since I didn't
+    define flex grow factors for them, .Button-box takes up all the available
+    space. This'll push the footer to the bottom */
+  }
 }
