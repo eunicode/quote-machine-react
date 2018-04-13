@@ -9,12 +9,16 @@ Basic single column layout for all browsers:
 
 .App {
   background-color: gray;
+  background-image: url(http://res.cloudinary.com/t3unfxn28/image/upload/v1500619979/wallpaper-iron-throne-1600_w8tfik.jpg);
+  background-position: center;
+  background-size: cover;
   min-height: 100vh; /* Even when viewport is shorter than all the elements in
   .App combined, .App extends to fit all of them */
   max-width: 50rem; /* container for fallback layout in wide viewports.
   max-width prevents horizontal scrollbars when width is skinnier than 50rem */
   margin: 0 auto; /* center */
   text-align: center;
+  color: white;
 }
 
 /* h1 {
@@ -30,6 +34,7 @@ Basic single column layout for all browsers:
 
 .Quote-box {
   padding: 0 1.5rem;
+  font-size: 1.2rem;
 }
 
 button {
@@ -40,6 +45,19 @@ button {
 
 footer {
   padding: 1.5rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:hover {
+  /* border-bottom: 1px solid white; */
+  /* padding-bottom: 2px; */
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
 @supports (display: flex) {
