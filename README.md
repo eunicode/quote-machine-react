@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a React web app that displays a random Game of Thrones quote. This project is part of freeCodeCamp's _[Front End Libraries](https://learn.freecodecamp.org/)_ curriculum.
+This is a React web app that displays a random _Game of Thrones_ quote. This project is part of freeCodeCamp's _[Front End Libraries](https://learn.freecodecamp.org/)_ curriculum.
 
 ## Demo 
 
@@ -18,7 +18,7 @@ Check out the vanilla JavaScript version and code here: https://codepen.io/eunip
 
 ## User stories 
 
-To do: Fulfill all the user stories required by [freeCodeCamp](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine/).
+To do: Fulfill all the [user stories](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine/) required by freeCodeCamp.
 
 ## Attribution
 
